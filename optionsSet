@@ -1,0 +1,175 @@
+[Global]
+loglevel = INFO
+numberofmodules = 1
+numberoftempsensors = 1
+numberoftanksensors = 3
+numberofvirtualbatteries = 1
+numberofpvchargers = 1
+
+[MQTT]
+brokeraddress = 192.168.1.135
+port = 1884
+username =
+password =
+
+[Relay_Module_1]
+serial = 1234567890123456
+moduleserial = relay66743
+deviceinstance = 1
+deviceindex = 0
+customname = Módulo principal camper
+numberofswitches = 16
+numberofinputs = 16
+mqtt_on_state_payload = ON
+mqtt_off_state_payload = OFF
+mqtt_on_command_payload = ON
+mqtt_off_command_payload = OFF
+
+# --- Iluminación ---
+[switch_1_1]
+customname = Luz Techo
+group = Iluminación
+mqttstatetopic = /dingtian/relay66743/out/r1
+mqttcommandtopic = /dingtian/relay66743/in/r1
+
+[switch_1_2]
+customname = Luz Baño
+group = Iluminación
+mqttstatetopic = /dingtian/relay66743/out/r2
+mqttcommandtopic = /dingtian/relay66743/in/r2
+
+[switch_1_3]
+customname = Luz Cocina
+group = Iluminación
+mqttstatetopic = /dingtian/relay66743/out/r3
+mqttcommandtopic = /dingtian/relay66743/in/r3
+
+[switch_1_4]
+customname = Luces LED interiores
+group = Iluminación
+mqttstatetopic = /dingtian/relay66743/out/r4
+mqttcommandtopic = /dingtian/relay66743/in/r4
+
+[switch_1_5]
+customname = Luces exteriores
+group = Iluminación
+mqttstatetopic = /dingtian/relay66743/out/r5
+mqttcommandtopic = /dingtian/relay66743/in/r5
+
+# --- Confort ---
+[switch_1_6]
+customname = Motor cama elevable
+group = Confort
+mqttstatetopic = /dingtian/relay66743/out/r6
+mqttcommandtopic = /dingtian/relay66743/in/r6
+
+[switch_1_12]
+customname = Calefacción estacionaria 24V
+group = Confort
+mqttstatetopic = /dingtian/relay66743/out/r12
+mqttcommandtopic = /dingtian/relay66743/in/r12
+
+# --- Cocina y agua ---
+[switch_1_7]
+customname = Vitrocerámica
+group = Cocina
+mqttstatetopic = /dingtian/relay66743/out/r7
+mqttcommandtopic = /dingtian/relay66743/in/r7
+
+[switch_1_8]
+customname = Frigorífico
+group = Cocina
+mqttstatetopic = /dingtian/relay66743/out/r8
+mqttcommandtopic = /dingtian/relay66743/in/r8
+
+[switch_1_9]
+customname = Boiler agua caliente
+group = Agua
+mqttstatetopic = /dingtian/relay66743/out/r9
+mqttcommandtopic = /dingtian/relay66743/in/r9
+
+[switch_1_10]
+customname = Bomba agua limpia
+group = Agua
+mqttstatetopic = /dingtian/relay66743/out/r10
+mqttcommandtopic = /dingtian/relay66743/in/r10
+
+[switch_1_11]
+customname = Bomba vaciado aguas grises
+group = Agua
+mqttstatetopic = /dingtian/relay66743/out/r11
+mqttcommandtopic = /dingtian/relay66743/in/r11
+
+# --- Energía y conectividad ---
+[switch_1_13]
+customname = Puertos USB
+group = Energía
+mqttstatetopic = /dingtian/relay66743/out/r13
+mqttcommandtopic = /dingtian/relay66743/in/r13
+
+[switch_1_14]
+customname = Enchufes 220V
+group = Energía
+mqttstatetopic = /dingtian/relay66743/out/r14
+mqttcommandtopic = /dingtian/relay66743/in/r14
+
+[switch_1_15]
+customname = Router WiFi
+group = Conectividad
+mqttstatetopic = /dingtian/relay66743/out/r15
+mqttcommandtopic = /dingtian/relay66743/in/r15
+
+# --- Seguridad ---
+[switch_1_16]
+customname = Cámaras y sensores aparcamiento
+group = Seguridad
+mqttstatetopic = /dingtian/relay66743/out/r16
+mqttcommandtopic = /dingtian/relay66743/in/r16
+
+# --- Sensores ---
+[Temp_Sensor_1]
+customname = Sensor temperatura interior
+type = room
+temperaturestatetopic = /dingtian/relay66743/out/temp1
+humiditystatetopic = /dingtian/relay66743/out/hum1
+batterystatetopic = /dingtian/relay66743/out/batt1
+
+[Tank_Sensor_1]
+customname = Depósito agua limpia
+fluidtype = fresh water
+levelstatetopic = /dingtian/relay66743/out/tank1/level
+rawvalueempty = 0
+rawvaluefull = 240
+capacity = 0.1
+
+[Tank_Sensor_2]
+customname = Depósito aguas grises
+fluidtype = waste water
+levelstatetopic = /dingtian/relay66743/out/tank2/level
+rawvalueempty = 0
+rawvaluefull = 240
+capacity = 0.1
+
+[Tank_Sensor_3]
+customname = Depósito combustible
+fluidtype = diesel
+levelstatetopic = /dingtian/relay66743/out/tank3/level
+rawvalueempty = 0
+rawvaluefull = 240
+capacity = 0.05
+
+[Virtual_Battery_1]
+customname = Batería auxiliar camper
+capacityah = 200
+currentstatetopic = /dingtian/relay66743/out/battery1/current
+voltagestatetopic = /dingtian/relay66743/out/battery1/voltage
+socstatetopic = /dingtian/relay66743/out/battery1/soc
+sohstatetopic = /dingtian/relay66743/out/battery1/soh
+
+[Pv_Charger_1]
+customname = Cargador solar camper
+batterycurrentstatetopic = /dingtian/relay66743/out/pv1/batterycurrent
+batteryvoltagestatetopic = /dingtian/relay66743/out/pv1/batteryvoltage
+pvvoltagestatetopic = /dingtian/relay66743/out/pv1/pvvoltage
+pvpowerstatetopic = /dingtian/relay66743/out/pv1/pvpower
+chargerstatetopic = /dingtian/relay66743/out/pv1/chargerstate
