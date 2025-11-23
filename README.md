@@ -54,6 +54,16 @@ Repositorio oficial: [drtinaz/external-devices](https://github.com/drtinaz/exter
 
 ### 2️⃣ Configurar el módulo Dingtian
 ## 🔌 Sobre el módulo Dingtian DT-R016
+Vista general del módulo y sus especificaciones:
+
+### Dimensiones
+![Dimensiones del Dingtian DT-R016](digtian16reles dimensiones.jpg)
+
+### Vista frontal
+![Módulo Dingtian DT-R016](digtian16reles.jpg)
+
+### Interfaces disponibles
+![Interfaces múltiples del Dingtian DT-R016](Multi_interface.jpg)
 
 El **Dingtian DT-R016** es una tarjeta de relés de 16 canales con 16 entradas digitales, diseñada para aplicaciones de automatización y control domótico. Se integra fácilmente en sistemas como **Venus OS**, **Home Assistant**, **Domoticz** u otros mediante protocolos estándar como **MQTT**, **Modbus** y **HTTP CGI**.
 
