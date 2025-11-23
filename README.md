@@ -53,12 +53,50 @@ Repositorio oficial: [drtinaz/external-devices](https://github.com/drtinaz/exter
 ---
 
 ### 2️⃣ Configurar el módulo Dingtian
+## 🔌 Sobre el módulo Dingtian DT-R016
 
-Accede al navegador en la IP del módulo:
+El **Dingtian DT-R016** es una tarjeta de relés de 16 canales con 16 entradas digitales, diseñada para aplicaciones de automatización y control domótico. Se integra fácilmente en sistemas como **Venus OS**, **Home Assistant**, **Domoticz** u otros mediante protocolos estándar como **MQTT**, **Modbus** y **HTTP CGI**.
 
-http://192.168.1.150
+### 📐 Especificaciones principales
+- **Modelo**: DT-R016  
+- **Tamaño**: 250 × 107 mm  
+- **Alimentación**: 12VDC / 24VDC / 12VAC / 24VAC  
+- **Consumo**: 9W  
+- **Corriente máxima**: 2A @ 12VDC  
+- **Tipo de relé**: NO/NC (Normalmente abierto / cerrado)  
+- **Entradas/Salidas**: 16 digitales (DI/DO)  
+- **Temperatura de trabajo**: -10°C ~ 85°C  
 
-Código
+### 🌐 Interfaces de comunicación
+- **Ethernet (RJ45)**  
+- **WiFi**  
+- **RS485 / CAN BUS**  
+- **Wiegand 26/34**  
+
+### 📡 Protocolos soportados
+- TCP (cliente/servidor)  
+- UDP  
+- HTTP GET / CGI  
+- Modbus RTU / ASCII / TCP/UDP  
+- MQTT  
+- CoAP  
+
+### ⚙️ Funciones avanzadas
+- **IP Watchdog**: reinicia dispositivos de red si se detecta caída.  
+- **Transmisión transparente**: RS485/CANBUS a Ethernet/WiFi.  
+- **Jogging / Delay / Timing**: control de relés con recuperación automática tras segundos o ciclos programados.  
+- **Mutua exclusión**: protección de motores (si un relé está ON, otro se apaga automáticamente).  
+- **Control mutuo y linkage**: entradas pueden activar relés en otros dispositivos.  
+
+El fabricante, **Shenzhen Dingtian Technologies Co., Ltd**, se especializa en soluciones de automatización para hogares inteligentes, integrando hardware y software en un mismo ecosistema.
+
+
+
+
+Accede al navegador en la IP del módulo: Por defecto viene otra, pero se ha configurado con otra.
+
+http://192.168.1.150 (configurada personalmente)
+
 
 Ajustes MQTT:
 
