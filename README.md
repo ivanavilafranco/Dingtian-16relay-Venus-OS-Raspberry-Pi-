@@ -11,3 +11,6 @@ Uso del broker MQTT interno (puerto 1884)
 Compatibilidad con Victron Cerbo GX, Ekrano GX y Raspberry Pi
 Menús personalizados con iconos GUI v2
 Manual detallado y archivo optionsSet listo para usar
+
+
+https://github.com/drtinaz/external-devices
