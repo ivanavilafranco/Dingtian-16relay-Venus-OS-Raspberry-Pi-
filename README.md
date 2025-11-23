@@ -3,13 +3,13 @@
 Este repositorio contiene la documentación, configuración y archivos necesarios para integrar un **módulo Dingtian DT-R016 (16 relés + 16 entradas digitales)** con una **Raspberry Pi** ejecutando **Venus OS 3.66**, utilizando **MQTT** y el servicio **external-devices**.
 
 El objetivo es que los relés, entradas y sensores del Dingtian se registren en **D-Bus** y puedan controlarse desde la **GUI v2 de Victron** (Ekrano GX, Cerbo GX o Raspberry Pi).
-## 🖼️ Capturas de la GUI
+## 🖼️ Capturas de los paneles
 
-Vista de los nuevos botones en la camper:
-
-![Botones Camper 1](nuevos botones camper1.jpg)
-![Botones Camper 2](nuevos botones camper2.jpg)
-![Botones Camper 3](nuevos botones camper3.jpg)
+<p align="center">
+  <img src="nuevos botones camper1.jpg" width="250"/>
+  <img src="nuevos botones camper2.jpg" width="250"/>
+  <img src="nuevos botones camper3.jpg" width="250"/>
+</p>
 
 ---
 
