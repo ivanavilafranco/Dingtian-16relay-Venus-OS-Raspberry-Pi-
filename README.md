@@ -4,7 +4,7 @@ Este repositorio contiene la documentación, configuración y archivos necesario
 
 El objetivo es que los relés, entradas y sensores del Dingtian se registren en **D-Bus** y puedan controlarse desde la **GUI v2 de Victron** (Ekrano GX, Cerbo GX o Raspberry Pi).
 ## 🖼️ Capturas de los paneles
-
+![Ejemplo Panel para iluninación](Luces.png)
 <p align="center">
   <img src="nuevos botones camper1.jpg" width="250"/>
   <img src="nuevos botones camper2.jpg" width="250"/>
